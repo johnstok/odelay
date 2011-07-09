@@ -40,7 +40,6 @@ import com.johnstok.odelay.Pattern;
 )
 @Documented
 @Retention(RetentionPolicy.SOURCE)
-@Target(ElementType.TYPE)
+@Target(ElementType.METHOD)
 public @interface TemplateMethod {
-    String implementation() default "";
 }

@@ -42,5 +42,4 @@ import com.johnstok.odelay.Pattern;
 @Retention(RetentionPolicy.SOURCE)
 @Target(ElementType.TYPE)
 public @interface ChainOfResponsibility {
-    String implementation() default "";
 }

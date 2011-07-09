@@ -43,5 +43,4 @@ import com.johnstok.odelay.Pattern;
 @Retention(RetentionPolicy.SOURCE)
 @Target(ElementType.TYPE)
 public @interface NullObject {
-    String implementation() default "";
 }

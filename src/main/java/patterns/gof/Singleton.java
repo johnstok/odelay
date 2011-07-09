@@ -53,5 +53,4 @@ import com.johnstok.odelay.Pattern;
 @Retention(RetentionPolicy.SOURCE)
 @Target(ElementType.TYPE)
 public @interface Singleton {
-    String implementation() default "";
 }
