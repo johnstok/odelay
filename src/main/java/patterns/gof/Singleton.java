@@ -17,30 +17,41 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with Odelay.  If not, see <http://www.gnu.org/licenses/>.
  *---------------------------------------------------------------------------*/
-package odelay.gof.behavioral;
+package patterns.gof;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
-import odelay.annotations.Pattern;
+import com.johnstok.odelay.AntiPattern;
+import com.johnstok.odelay.Pattern;
 
 
 /**
- * The 'Visitor' pattern.
+ * The 'Singleton' pattern.
  *
  * @author Keith Webster Johnston.
  */
 @Pattern(
-    title="Visitor",
+    title="Singleton",
     references={
-        "http://en.wikipedia.org/wiki/Visitor_pattern"
+        "http://en.wikipedia.org/wiki/Singleton_pattern"
+    }
+)
+@AntiPattern(
+    justifications={
+        "Makes dependent code hard to test.",
+        "Hard to implement."
+    },
+    references={
+        "http://tech.puredanger.com/2007/07/03/pattern-hate-singleton/",
+        "http://steve.yegge.googlepages.com/singleton-considered-stupid"
     }
 )
 @Documented
 @Retention(RetentionPolicy.SOURCE)
 @Target(ElementType.TYPE)
-public @interface Visitor {
+public @interface Singleton {
     String implementation() default "";
 }

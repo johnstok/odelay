@@ -17,30 +17,31 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with Odelay.  If not, see <http://www.gnu.org/licenses/>.
  *---------------------------------------------------------------------------*/
-package odelay.gof.structural;
+package patterns.gof;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
-import odelay.annotations.Pattern;
+import com.johnstok.odelay.Pattern;
 
 
 /**
- * The 'Composite' pattern.
+ * The 'Null Object' pattern.
  *
  * @author Keith Webster Johnston.
  */
 @Pattern(
-    title="Composite",
+    title="Null Object",
     references={
-        "http://en.wikipedia.org/wiki/Composite_pattern"
+        "http://en.wikipedia.org/wiki/Null_Object_pattern",
+        "http://martinfowler.com/eaaCatalog/specialCase.html"
     }
 )
 @Documented
 @Retention(RetentionPolicy.SOURCE)
 @Target(ElementType.TYPE)
-public @interface Composite {
+public @interface NullObject {
     String implementation() default "";
 }

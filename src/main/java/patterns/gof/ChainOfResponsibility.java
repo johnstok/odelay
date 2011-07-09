@@ -17,41 +17,30 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with Odelay.  If not, see <http://www.gnu.org/licenses/>.
  *---------------------------------------------------------------------------*/
-package odelay.gof;
+package patterns.gof;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
-import odelay.annotations.AntiPattern;
-import odelay.annotations.Pattern;
+import com.johnstok.odelay.Pattern;
 
 
 /**
- * The 'Singleton' pattern.
+ * The 'Chain Of Responsibility' pattern.
  *
  * @author Keith Webster Johnston.
  */
 @Pattern(
-    title="Singleton",
+    title="Chain Of Responsibility",
     references={
-        "http://en.wikipedia.org/wiki/Singleton_pattern"
-    }
-)
-@AntiPattern(
-    justifications={
-        "Makes dependent code hard to test.",
-        "Hard to implement."
-    },
-    references={
-        "http://tech.puredanger.com/2007/07/03/pattern-hate-singleton/",
-        "http://steve.yegge.googlepages.com/singleton-considered-stupid"
+        "http://en.wikipedia.org/wiki/Chain-of-responsibility_pattern"
     }
 )
 @Documented
 @Retention(RetentionPolicy.SOURCE)
 @Target(ElementType.TYPE)
-public @interface Singleton {
+public @interface ChainOfResponsibility {
     String implementation() default "";
 }

@@ -17,14 +17,14 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with Odelay.  If not, see <http://www.gnu.org/licenses/>.
  *---------------------------------------------------------------------------*/
-package odelay.gof.behavioral;
+package patterns.gof;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
-import odelay.annotations.Pattern;
+import com.johnstok.odelay.Pattern;
 
 
 /**

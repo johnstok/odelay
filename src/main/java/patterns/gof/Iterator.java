@@ -17,39 +17,30 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with Odelay.  If not, see <http://www.gnu.org/licenses/>.
  *---------------------------------------------------------------------------*/
-package odelay.annotations;
+package patterns.gof;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
+import com.johnstok.odelay.Pattern;
 
 
 /**
- * Meta annotation used to describe a pattern annotation.
+ * The 'Iterator' pattern.
  *
  * @author Keith Webster Johnston.
  */
-@Retention(RetentionPolicy.SOURCE)
-@Target(ElementType.ANNOTATION_TYPE)
+@Pattern(
+    title="Iterator",
+    references={
+        "http://en.wikipedia.org/wiki/Iterator_pattern"
+    }
+)
 @Documented
-public @interface Pattern {
-    String title();
-    String[] forces() default {};
-    String intent() default "";
-    String[] references() default {};
-    /*
-     * Other fields? :
-     * participants
-     * examples / known uses
-     * related patterns
-     * synonyms
-     * discussion
-     *
-     * See also:
-     * http://www.martinfowler.com/articles/writingPatterns.html
-     * http://hillside.net/patterns/definition.html
-     */
-
+@Retention(RetentionPolicy.SOURCE)
+@Target(ElementType.TYPE)
+public @interface Iterator {
+    String implementation() default "";
 }

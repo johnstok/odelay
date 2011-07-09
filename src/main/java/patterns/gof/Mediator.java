@@ -17,24 +17,30 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with Odelay.  If not, see <http://www.gnu.org/licenses/>.
  *---------------------------------------------------------------------------*/
-package odelay.annotations;
+package patterns.gof;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
+import com.johnstok.odelay.Pattern;
 
 
 /**
- * Meta annotation used to describe a pattern annotation.
+ * The 'Mediator' pattern.
  *
  * @author Keith Webster Johnston.
  */
-@Retention(RetentionPolicy.SOURCE)
-@Target(ElementType.ANNOTATION_TYPE)
+@Pattern(
+    title="Mediator",
+    references={
+        "http://en.wikipedia.org/wiki/Mediator_pattern"
+    }
+)
 @Documented
-public @interface AntiPattern {
-    String[] justifications() default {};
-    String[] references() default {};
+@Retention(RetentionPolicy.SOURCE)
+@Target(ElementType.TYPE)
+public @interface Mediator {
+    String implementation() default "";
 }

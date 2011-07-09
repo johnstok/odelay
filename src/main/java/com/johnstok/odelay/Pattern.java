@@ -17,30 +17,39 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with Odelay.  If not, see <http://www.gnu.org/licenses/>.
  *---------------------------------------------------------------------------*/
-package odelay.gof.structural;
+package com.johnstok.odelay;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
-import odelay.annotations.Pattern;
 
 
 /**
- * The 'Proxy' pattern.
+ * Meta annotation used to describe a pattern annotation.
  *
  * @author Keith Webster Johnston.
  */
-@Pattern(
-    title="Proxy",
-    references={
-        "http://en.wikipedia.org/wiki/Proxy_pattern"
-    }
-)
-@Documented
 @Retention(RetentionPolicy.SOURCE)
-@Target(ElementType.TYPE)
-public @interface Proxy {
-    String implementation() default "";
+@Target(ElementType.ANNOTATION_TYPE)
+@Documented
+public @interface Pattern {
+    String title();
+    String[] forces() default {};
+    String intent() default "";
+    String[] references() default {};
+    /*
+     * Other fields? :
+     * participants
+     * examples / known uses
+     * related patterns
+     * synonyms
+     * discussion
+     *
+     * See also:
+     * http://www.martinfowler.com/articles/writingPatterns.html
+     * http://hillside.net/patterns/definition.html
+     */
+
 }

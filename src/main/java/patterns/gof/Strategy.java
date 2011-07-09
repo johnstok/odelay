@@ -17,30 +17,30 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with Odelay.  If not, see <http://www.gnu.org/licenses/>.
  *---------------------------------------------------------------------------*/
-package odelay.gof.structural;
+package patterns.gof;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
-import odelay.annotations.Pattern;
+import com.johnstok.odelay.Pattern;
 
 
 /**
- * The 'Flyweight' pattern.
+ * The 'Strategy' pattern.
  *
  * @author Keith Webster Johnston.
  */
 @Pattern(
-    title="Flyweight",
+    title="Strategy",
     references={
-        "http://en.wikipedia.org/wiki/Flyweight_pattern"
+        "http://en.wikipedia.org/wiki/Strategy_pattern"
     }
 )
 @Documented
 @Retention(RetentionPolicy.SOURCE)
 @Target(ElementType.TYPE)
-public @interface Flyweight {
+public @interface Strategy {
     String implementation() default "";
 }

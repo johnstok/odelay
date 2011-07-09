@@ -17,31 +17,30 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with Odelay.  If not, see <http://www.gnu.org/licenses/>.
  *---------------------------------------------------------------------------*/
-package odelay.gof;
+package patterns.gof;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
-import odelay.annotations.Pattern;
+import com.johnstok.odelay.Pattern;
 
 
 /**
- * The 'Null Object' pattern.
+ * The 'Command' pattern.
  *
  * @author Keith Webster Johnston.
  */
 @Pattern(
-    title="Null Object",
+    title="Command",
     references={
-        "http://en.wikipedia.org/wiki/Null_Object_pattern",
-        "http://martinfowler.com/eaaCatalog/specialCase.html"
+        "http://en.wikipedia.org/wiki/Command_pattern"
     }
 )
 @Documented
 @Retention(RetentionPolicy.SOURCE)
 @Target(ElementType.TYPE)
-public @interface NullObject {
+public @interface Command {
     String implementation() default "";
 }

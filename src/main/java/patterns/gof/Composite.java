@@ -17,30 +17,30 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with Odelay.  If not, see <http://www.gnu.org/licenses/>.
  *---------------------------------------------------------------------------*/
-package odelay.gof.creational;
+package patterns.gof;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
-import odelay.annotations.Pattern;
+import com.johnstok.odelay.Pattern;
 
 
 /**
- * The 'Factory Method' pattern.
+ * The 'Composite' pattern.
  *
  * @author Keith Webster Johnston.
  */
 @Pattern(
-    title="Factory Method",
+    title="Composite",
     references={
-        "http://en.wikipedia.org/wiki/Factory_method_pattern"
+        "http://en.wikipedia.org/wiki/Composite_pattern"
     }
 )
 @Documented
 @Retention(RetentionPolicy.SOURCE)
 @Target(ElementType.TYPE)
-public @interface FactoryMethod {
+public @interface Composite {
     String implementation() default "";
 }

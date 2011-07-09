@@ -17,30 +17,30 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with Odelay.  If not, see <http://www.gnu.org/licenses/>.
  *---------------------------------------------------------------------------*/
-package odelay.gof.creational;
+package patterns.gof;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
-import odelay.annotations.Pattern;
+import com.johnstok.odelay.Pattern;
 
 
 /**
- * The 'Prototype' pattern.
+ * The 'State' pattern.
  *
  * @author Keith Webster Johnston.
  */
 @Pattern(
-    title="Prototype",
+    title="State",
     references={
-        "http://en.wikipedia.org/wiki/Prototype_pattern"
+        "http://en.wikipedia.org/wiki/State_pattern"
     }
 )
 @Documented
 @Retention(RetentionPolicy.SOURCE)
 @Target(ElementType.TYPE)
-public @interface Prototype {
+public @interface State {
     String implementation() default "";
 }

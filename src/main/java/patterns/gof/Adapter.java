@@ -17,30 +17,30 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with Odelay.  If not, see <http://www.gnu.org/licenses/>.
  *---------------------------------------------------------------------------*/
-package odelay.gof.creational;
+package patterns.gof;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
-import odelay.annotations.Pattern;
+import com.johnstok.odelay.Pattern;
 
 
 /**
- * The 'Abstract Factory' pattern.
+ * The 'Adapter' pattern.
  *
  * @author Keith Webster Johnston.
  */
 @Pattern(
-    title="Abstract Factory",
+    title="Adapter",
     references={
-        "http://en.wikipedia.org/wiki/Abstract_factory_pattern"
+        "http://en.wikipedia.org/wiki/Adapter_pattern"
     }
 )
 @Documented
 @Retention(RetentionPolicy.SOURCE)
 @Target(ElementType.TYPE)
-public @interface AbstractFactory {
+public @interface Adapter {
     String implementation() default "";
 }
