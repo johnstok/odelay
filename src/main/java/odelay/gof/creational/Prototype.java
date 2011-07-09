@@ -33,7 +33,10 @@ import odelay.annotations.Pattern;
  * @author Keith Webster Johnston.
  */
 @Pattern(
-    title="Prototype"
+    title="Prototype",
+    references={
+        "http://en.wikipedia.org/wiki/Prototype_pattern"
+    }
 )
 @Documented
 @Retention(RetentionPolicy.SOURCE)

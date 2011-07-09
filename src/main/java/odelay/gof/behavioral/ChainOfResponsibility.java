@@ -33,7 +33,10 @@ import odelay.annotations.Pattern;
  * @author Keith Webster Johnston.
  */
 @Pattern(
-    title="Chain Of Responsibility"
+    title="Chain Of Responsibility",
+    references={
+        "http://en.wikipedia.org/wiki/Chain-of-responsibility_pattern"
+    }
 )
 @Documented
 @Retention(RetentionPolicy.SOURCE)

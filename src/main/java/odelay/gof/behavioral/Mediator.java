@@ -33,7 +33,10 @@ import odelay.annotations.Pattern;
  * @author Keith Webster Johnston.
  */
 @Pattern(
-    title="Mediator"
+    title="Mediator",
+    references={
+        "http://en.wikipedia.org/wiki/Mediator_pattern"
+    }
 )
 @Documented
 @Retention(RetentionPolicy.SOURCE)

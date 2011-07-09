@@ -33,7 +33,10 @@ import odelay.annotations.Pattern;
  * @author Keith Webster Johnston.
  */
 @Pattern(
-    title="Abstract Factory"
+    title="Abstract Factory",
+    references={
+        "http://en.wikipedia.org/wiki/Abstract_factory_pattern"
+    }
 )
 @Documented
 @Retention(RetentionPolicy.SOURCE)

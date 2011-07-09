@@ -33,7 +33,10 @@ import odelay.annotations.Pattern;
  * @author Keith Webster Johnston.
  */
 @Pattern(
-    title="Iterator"
+    title="Iterator",
+    references={
+        "http://en.wikipedia.org/wiki/Iterator_pattern"
+    }
 )
 @Documented
 @Retention(RetentionPolicy.SOURCE)

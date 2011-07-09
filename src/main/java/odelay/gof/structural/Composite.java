@@ -33,7 +33,10 @@ import odelay.annotations.Pattern;
  * @author Keith Webster Johnston.
  */
 @Pattern(
-    title="Composite"
+    title="Composite",
+    references={
+        "http://en.wikipedia.org/wiki/Composite_pattern"
+    }
 )
 @Documented
 @Retention(RetentionPolicy.SOURCE)

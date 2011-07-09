@@ -33,7 +33,10 @@ import odelay.annotations.Pattern;
  * @author Keith Webster Johnston.
  */
 @Pattern(
-    title="Flyweight"
+    title="Flyweight",
+    references={
+        "http://en.wikipedia.org/wiki/Flyweight_pattern"
+    }
 )
 @Documented
 @Retention(RetentionPolicy.SOURCE)

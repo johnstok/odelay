@@ -33,7 +33,10 @@ import odelay.annotations.Pattern;
  * @author Keith Webster Johnston.
  */
 @Pattern(
-    title="Proxy"
+    title="Proxy",
+    references={
+        "http://en.wikipedia.org/wiki/Proxy_pattern"
+    }
 )
 @Documented
 @Retention(RetentionPolicy.SOURCE)

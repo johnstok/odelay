@@ -33,7 +33,10 @@ import odelay.annotations.Pattern;
  * @author Keith Webster Johnston.
  */
 @Pattern(
-    title="Adapter"
+    title="Adapter",
+    references={
+        "http://en.wikipedia.org/wiki/Adapter_pattern"
+    }
 )
 @Documented
 @Retention(RetentionPolicy.SOURCE)

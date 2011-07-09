@@ -33,7 +33,10 @@ import odelay.annotations.Pattern;
  * @author Keith Webster Johnston.
  */
 @Pattern(
-    title="Factory Method"
+    title="Factory Method",
+    references={
+        "http://en.wikipedia.org/wiki/Factory_method_pattern"
+    }
 )
 @Documented
 @Retention(RetentionPolicy.SOURCE)

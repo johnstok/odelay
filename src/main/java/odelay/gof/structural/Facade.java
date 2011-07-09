@@ -33,7 +33,10 @@ import odelay.annotations.Pattern;
  * @author Keith Webster Johnston.
  */
 @Pattern(
-    title="Facade"
+    title="Facade",
+    references={
+        "http://en.wikipedia.org/wiki/Facade_pattern"
+    }
 )
 @Documented
 @Retention(RetentionPolicy.SOURCE)

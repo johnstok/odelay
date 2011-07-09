@@ -33,7 +33,10 @@ import odelay.annotations.Pattern;
  * @author Keith Webster Johnston.
  */
 @Pattern(
-    title="Builder"
+    title="Builder",
+    references={
+        "http://en.wikipedia.org/wiki/Builder_pattern"
+    }
 )
 @Documented
 @Retention(RetentionPolicy.SOURCE)

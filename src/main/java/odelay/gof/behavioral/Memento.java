@@ -33,7 +33,10 @@ import odelay.annotations.Pattern;
  * @author Keith Webster Johnston.
  */
 @Pattern(
-    title="Memento"
+    title="Memento",
+    references={
+        "http://en.wikipedia.org/wiki/Memento_pattern"
+    }
 )
 @Documented
 @Retention(RetentionPolicy.SOURCE)

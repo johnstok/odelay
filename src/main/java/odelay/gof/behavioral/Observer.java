@@ -33,7 +33,10 @@ import odelay.annotations.Pattern;
  *@author Keith Webster Johnston.
  */
 @Pattern(
-    title="Observer"
+    title="Observer",
+    references={
+        "http://en.wikipedia.org/wiki/Observer_pattern"
+    }
 )
 @Documented
 @Retention(RetentionPolicy.SOURCE)

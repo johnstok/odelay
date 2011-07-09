@@ -41,7 +41,7 @@ import odelay.annotations.Pattern;
 )
 @AntiPattern(
     justifications={
-        "Make dependant code hard to test.",
+        "Makes dependent code hard to test.",
         "Hard to implement."
     },
     references={

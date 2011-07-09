@@ -33,7 +33,10 @@ import odelay.annotations.Pattern;
  * @author Keith Webster Johnston.
  */
 @Pattern(
-    title="Bridge"
+    title="Bridge",
+    references={
+        "http://en.wikipedia.org/wiki/Bridge_pattern"
+    }
 )
 @Documented
 @Retention(RetentionPolicy.SOURCE)

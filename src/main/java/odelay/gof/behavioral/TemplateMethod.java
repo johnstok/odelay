@@ -33,7 +33,10 @@ import odelay.annotations.Pattern;
  * @author Keith Webster Johnston.
  */
 @Pattern(
-    title="Template Method"
+    title="Template Method",
+    references={
+        "http://en.wikipedia.org/wiki/Template_method_pattern"
+    }
 )
 @Documented
 @Retention(RetentionPolicy.SOURCE)

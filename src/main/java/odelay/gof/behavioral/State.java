@@ -33,7 +33,10 @@ import odelay.annotations.Pattern;
  * @author Keith Webster Johnston.
  */
 @Pattern(
-    title="State"
+    title="State",
+    references={
+        "http://en.wikipedia.org/wiki/State_pattern"
+    }
 )
 @Documented
 @Retention(RetentionPolicy.SOURCE)

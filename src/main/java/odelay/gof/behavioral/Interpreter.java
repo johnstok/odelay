@@ -33,7 +33,10 @@ import odelay.annotations.Pattern;
  * @author Keith Webster Johnston.
  */
 @Pattern(
-    title="Interpreter"
+    title="Interpreter",
+    references={
+        "http://en.wikipedia.org/wiki/Interpreter_pattern"
+    }
 )
 @Documented
 @Retention(RetentionPolicy.SOURCE)
