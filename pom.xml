@@ -18,7 +18,8 @@
     </repositories>
 
 	<artifactId>odelay</artifactId>
-	<name>odelay</name>
-	<version>0.0.1</version>
+	<name>Odelay</name>
+	<description>Odelay is a library of annotations that can be used to describe the patterns implemented in a Java application.</description>
+	<version>0.0.2-SNAPSHOT</version>
 
 </project>
